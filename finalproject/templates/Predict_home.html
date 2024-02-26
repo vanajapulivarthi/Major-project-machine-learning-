@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiDisease Detection</title>
+
+
+</head>
+<body>
+ <center><h1>Multi Disease Detection</h1><br>
+
+
+     <form action="/result" name="predict" onsubmit="return myFunction()">
+
+        <table>
+           <tr name="row1">
+               <td><label>Gender:</label></td>
+                <td><input type="number" name="sex" placeholder=" 0 or 1">&nbsp;&nbsp;&nbsp;</td>
+        
+                <td><label>on thyroxine:</label></td>
+                <td> <input type="number" name="on thyroxine" placeholder="0 or 1">&nbsp;&nbsp;&nbsp; </td>
+
+                <td><label>query hypothyroid:</label> </td>
+                <td><input type="number" name="query hypothyroid" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+
+            <tr name="row2">
+                <td><label>tSH measured:</label></td>
+                <td><input type="number" name="tSH measured" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+           
+             <td><label>tSH:</label></td>
+             <td><input type="number" name="tSH" placeholder="0-530">&nbsp;&nbsp;&nbsp;</td>
+
+             <td><label>t3:</label></td>
+             <td><input type="number" name="t3" placeholder="0-11">&nbsp;&nbsp;&nbsp;</td>
+
+            </tr>
+
+            <tr name="row3">
+
+            <td><label>tt4 measured:</label></td>
+             <td><input type="number" name="tt4 measured" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+
+             <td><label>tt4:</label></td>
+             <td><input type="number" name="tt4" placeholder="0-430">&nbsp;&nbsp;&nbsp;</td>
+
+           
+              <td><label>t4U:</label></td>
+              <td><input type="number" name="t4U" placeholder="0-3">&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+
+            <tr name="row4">
+              <td><label>ftI:</label> </td>
+              <td><input type="number" name="ftI" placeholder="0-395">&nbsp;&nbsp;&nbsp;</td>
+
+              <td><label>BMI:</label> </td>
+              <td><input type="number" name="BMI" placeholder="0-40">&nbsp;&nbsp;&nbsp;</td>
+
+              <td><label>I beta- HCG(mIU/mL):</label> </td>
+              <td><input type="number" name="  I   beta-HCG(mIU/mL)" placeholder="0-33000">&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+
+            <tr name="row5">
+
+            <td><label>TSH (mIU/L):</label> </td>
+            <td><input type="number" name="TSH (mIU/L)" placeholder="0-65">&nbsp;&nbsp;&nbsp;</td>
+
+            <td><label>AMH(ng/mL):</label> </td>
+            <td><input type="number" name="AMH(ng/mL)" placeholder="0-66">&nbsp;&nbsp;&nbsp;</td>
+
+            <td><label>Weight gain(Y/N):</label> </td>
+            <td><input type="number" name="Weight gain(Y/N)" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+
+         <tr name="row6">
+            <td><label>hair growth(Y/N):</label></td>
+            <td> <input type="number" name="hair growth(Y/N)" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+         
+            <td><label>Skin darkening (Y/N):</label></td>
+            <td><input type="number" name="Skin darkening (Y/N)" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+
+            <td> <label>Follicle No. (L):</label> </td>
+            <td><input type="number" name="Follicle No. (L)" placeholder="0-22">&nbsp;&nbsp;&nbsp; </td>
+        </tr>
+
+        <tr name="row7">
+            <td><label>Follicle No. (R)</label> </td>
+            <td><input type="number" name="Follicle No. (R)" placeholder="0-20"></td>
+
+            <td><label>Age:</label> </td>
+            <td><input type="number" name="Age" placeholder="0-90">&nbsp;&nbsp;&nbsp;</td>
+         
+                <td><label>Gender:</label></td>
+                <td> <input type="number" name="Gender" placeholder="0 or 1">&nbsp;&nbsp;&nbsp;</td>
+    
+            </tr>    
+
+            <tr name="row8">
+                <td><label>TotalBilirubin:</label> </td>
+                <td><input type="number" name="TotalBilirubin" placeholder="0-75">&nbsp;&nbsp;&nbsp;</td>
+    
+                <td><label>DirectBilirubin:</label></td>
+                <td> <input type="number" name="DirectBilirubin" placeholder="0-20">&nbsp;&nbsp;&nbsp;</td>
+    
+                <td><label>TotalProtiens:</label> </td>
+                <td><input type="number" name="TotalProtiens" placeholder="0-2200">&nbsp;&nbsp;&nbsp;</td>
+                
+            </tr>
+            <tr name="row9">
+                <td><label>AlkphosAlkalinePhosphotase</label> </td>
+                <td><input type="number" name="AlkphosAlkalinePhosphotase" placeholder="0-2000">&nbsp;&nbsp;&nbsp;</td>
+
+                <td><label>SgptAlamineAminotransferase:</label> </td>
+                <td><input type="number" name="SgptAlamineAminotransferase" placeholder="0-5000">&nbsp;&nbsp;&nbsp;</td>
+                <td><label>ALBAlbumin:</label></td>
+                <td> <input type="number" name="ALBAlbumin" placeholder="0-10">&nbsp;&nbsp;&nbsp;</td>
+                
+            
+                
+            </tr>
+            <tr name="row10">
+                <td><label>SgotAspartateAminotransferase:</label> </td>
+                <td><input type="number" name="SgotAspartateAminotransferase" placeholder="0-6">&nbsp;&nbsp;&nbsp;</td>
+             
+                <td><label>A/GRatioAlbuminandGlobulin Ratio</label> </td>
+                <td><input type="number" name="A/GRatioAlbuminandGlobulin Ratio" placeholder="0-3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+             </tr>
+             
+        </table>
+        <button class="butn" type="submit" >Submit</button>
+        
+    </div>
+
+
+     </form>
+
+ <style>
+
+h1{
+
+ font-size:50px;
+ color: white;
+
+}
+
+body{
+background-image : url(static/images/main.jpg);
+}
+
+.butn:hover{
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: linear-gradient(to right, blue , aqua);
+   color : white;
+}
+
+
+.butn{
+padding: 12px 28px;font-size: 16px;
+background-color:#ddd6f3;
+border-radius: 8px;
+font-size: 20px;
+
+}
+.butn:active {
+background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+label{
+color:white;
+font-size: 20px;
+}
+input{
+border-radius:10px;
+border: 1px;
+height: 20px;
+}
+
+
+input[type=number]:focus {
+
+  background-image : linear-gradient(to right, blue,aqua);
+  color:white;
+ ;
+}
+    </style>
+
+
+ </center>
+  <script type="text/javascript">
+
+        function myFunction(){
+            
+            //thyroid
+            
+
+            const thyroid = ["sex", "on thyroxine", "query hypothyroid", "tSH measured", "tSH", "t3", "tt4 measured", "tt4", "t4U", "ftI"] ;     
+            let t =0;
+            for(var i= 0; i < thyroid.length ;i++){
+                
+                var feature = document.forms["predict"][thyroid[i]].value;
+                
+                if((feature == null)|| (feature == "")){
+                    t= t+1;
+                }
+               
+            } // for
+            if(t>0 && t<10 ){
+                alert("enter the values from Gender to ftI");
+                return false;
+            }
+            if(t== 10){
+                alert("Enter the Values");
+                return false;
+            }
+            const pcos = ["BMI",'  I   beta-HCG(mIU/mL)','TSH (mIU/L)','AMH(ng/mL)','Weight gain(Y/N)','hair growth(Y/N)','Skin darkening (Y/N)','Follicle No. (L)','Follicle No. (R)'];
+            let p =0;
+
+            for(var i= 0; i < pcos.length ;i++){
+                
+                var pcos_feature = document.forms["predict"][pcos[i]].value;
+                
+                if((pcos_feature == null)|| (pcos_feature == "")){
+                    p = p+1;
+                }
+            
+            }
+            
+            if(p < 9 && p>0){
+                alert("enter the values from  BMI to Follicle No. (R)");
+                return false;
+            }  
+            if( p == 9 || p == 0){
+
+                const liver = ['Age','Gender','TotalBilirubin','DirectBilirubin','AlkphosAlkalinePhosphotase','SgptAlamineAminotransferase','SgotAspartateAminotransferase','TotalProtiens','ALBAlbumin','A/GRatioAlbuminandGlobulin Ratio'];
+                var l = 0;
+                for(var i= 0;i< liver.length;i++){
+                var feature = document.forms["predict"][liver[i]].value;
+                
+                    if( (feature == null || feature == "" )){ 
+                        l = l+1;
+                    }
+                }
+            
+                if(l< 10 && l>0){
+                    alert("enter the values from Age to AGRatioAlbuminandGlobulin_Ratio");
+                    return false;
+                }
+            }                  
+            
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+    

@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0px;
+}
+body{
+    align-items:center;
+    justify-content:center ;
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right,#2980b9,#6dd5fa,#ffffff);
+}
+
+.container{
+    width: 50%;
+    max-width: 100px;
+    padding:25px 30px;
+    margin: 0 30px;
+    box-shadow: 0 15px 20px #ABB2B9;
+} 
+
+.container .heading{
+   font-size:30px;
+   font-weight: 500;
+   position: relative;
+   text-align: center;
+   padding: 0 0 30px 0;
+   background: -webkit-linear-gradient(#b92b27, #1565c0);
+   background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .heading::before{
+
+    content: '';
+    position: absolute;
+    height:3px;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg,#ec008c, #fc6767);
+}
+
+.container form .content{
+      margin-top: 25px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+}
+
+form .content .input_box{
+    width: 30%;
+    margin-bottom: 10px;
+
+}
+
+label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+form .content .input_box .input_text{
+    height: 45px;
+    width:100%;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding-left: 15px;
+    font-size:16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.content .input_box .input_text:focus,
+.content .input_box .input_text:valid{
+    border-color: #9b59b6;
+}
+
+
+form .button{
+text-align: center;
+justify-content: center;
+}
+form .button input {
+   margin-top:50px;
+   height:50%;
+   width:100%;
+   color:#ffffff;
+   border: none;
+   font-size: 20px;
+   font-weight: 500;
+   border-radius: 5px;
+   background: linear-gradient(135deg,#ec008c, #fc6767);
+}
+
+
+.result{
+    text-align:center;
+    font-size:25px;
+    font-weight:400;
+    padding-left: 100px;
+    width:100%;
+    color: #af0050;
+}
